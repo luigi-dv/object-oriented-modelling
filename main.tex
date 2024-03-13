@@ -1,0 +1,69 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{glossaries}
+% Define example environment
+\newtheorem{example}{Example}
+% Define the glossary
+\input{glossary}
+% Define code style
+\lstdefinestyle{JavaStyle}{
+    language=Java,
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green},
+    stringstyle=\color{purple},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    breakautoindent=true,
+    escapeinside={\%*}{*)},
+}
+
+
+\title{Object-Oriented Modelling}
+\author{LM Davila}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+	Your abstract.
+\end{abstract}
+
+% Include the Requirements Analysis section
+\input{lectures/lecture_1} 
+\newpage
+
+% References
+
+%Print the glossaries
+\printglossaries
+
+\end{document}
